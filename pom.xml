@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.ramcodemo.tutorial</groupId>
+    <groupId>com.jfrog.tutorial</groupId>
     <artifactId>addressbook</artifactId>
     <packaging>war</packaging>
-    <version>2.3.10</version>
+    <version>5.0.0</version>
     <name>Vaadin Addressbook example</name>
 
     <properties>
@@ -535,13 +535,13 @@
             </reporting>
         </profile>
     </profiles>
-  <distributionManagement>
+<distributionManagement>
     <repository>
-      <id>github</id>
-      <name>GitHub ganeshbabu-j Apache Maven Packages</name>
-	    <url>https://maven.pkg.github.com/ganeshbabu-j/GitHub-Ramco-Demo</url>
+        <id>central</id>
+        <name>jfrog-releases</name>
+        <url>http://35.194.25.81:8081/artifactory/libs-release</url>
     </repository>
-  </distributionManagement>
+</distributionManagement>
 
 </project>
 
