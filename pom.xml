@@ -4,7 +4,7 @@
     <groupId>com.jfrog.tutorial</groupId>
     <artifactId>addressbook</artifactId>
     <packaging>war</packaging>
-    <version>5.0.0</version>
+    <version>1.0.0</version>
     <name>Vaadin Addressbook example</name>
 
     <properties>
@@ -229,36 +229,6 @@
             </activation>
 
         </profile>
-	      <profile>
-		<id>sonar</id>
-		<properties>
-			<sonar.sources>.</sonar.sources>
-			<sonar.inclusions>src/main/java/**,src/main/resources/**</sonar.inclusions>
-			<sonar.projectKey>GaneshBabu-J_GitHub-Ramco-Demo</sonar.projectKey>
-  			<sonar.organization>ganeshbabu-j</sonar.organization>
-  			<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		</properties>
-		<activation>
-			<activeByDefault>false</activeByDefault>
-		</activation>
-		<build>
-			<plugins>
-				<plugin>
-					<groupId>org.sonarsource.scanner.maven</groupId>
-					<artifactId>sonar-maven-plugin</artifactId>
-					<version>3.7.0.1746</version>
-					<executions>
-						<execution>
-							<phase>verify</phase>
-							<goals>
-								<goal>sonar</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
-		</build>
-	</profile>
         <profile>
             <id>metrics</id>
             <build>
